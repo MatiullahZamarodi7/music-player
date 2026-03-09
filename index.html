@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+        }
+
+        .title {
+            font-weight: bold;
+            position: absolute;
+            top: 80px;
+            font-size: 70px;
+            color: white;
+        }
+
+        .img {
+            position: absolute;
+            top: 160px;
+            width: 270px;
+            border-radius: 50%;
+
+
+
+
+            box-shadow: 0px 0px 38px -20px rgb(255, 0, 212);
+
+            animation: glow 0.5s ease-in-out infinite alternate;
+
+            animation-play-state: paused;
+            box-shadow: 0 0 30px rgb(255, 0, 0);
+
+
+        }
+
+        @keyframes glow {
+            form {
+                box-shadow: 0px 0px 38px -20px rgb(255, 0, 212);
+            }
+
+            to {
+                box-shadow: 0px 0px 38px +20px rgb(255, 0, 212);
+            }
+        }
+
+        .musicLenght {
+            position: absolute;
+            top: 75%;
+            width: 400px;
+            cursor: pointer;
+            height: 0.1px;
+            appearance: none;
+        }
+
+        .btn {
+            position: absolute;
+            top: 80%;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        #pause {
+            margin-left: 10px;
+        }
+
+        #play {
+            margin-left: 30px;
+        }
+
+        #next {
+            margin-left: 30px;
+        }
+
+        .totleTime {
+            color: white;
+            position: absolute;
+            top: 73%;
+            left: 34%;
+        }
+
+        .currentTime {
+            color: white;
+            position: absolute;
+            top: 73%;
+            right: 33%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <div class="title">Matiulalh Zamarodi </div>
+        <audio class="music" src=""></audio>
+        <img class="img" src="194 music img prj/2FB_IMG_1731349665374.jpg" alt="">
+
+        <span class="totleTime"></span>
+        <input type="range" value="0" class="musicLenght">
+        <span class="currentTime"></span>
+
+        <div class="btn">
+            <i><img id="back" src="194 music img prj/back.ico" alt=""></i>
+            <i><img id="play" src="194 music img prj/icons8_play.ico" alt=""></i>
+            <i><img id="pause" src="194 music img prj/icons8_pause.ico" alt=""></i>
+            <i><img id="next" src="194 music img prj/next.ico" alt=""></i>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="194 music player prj.js"></script>
+</body>
+
+</html> 
